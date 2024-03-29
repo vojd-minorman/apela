@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Styles pour le menu hamburger */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .menu ul li {
+            margin-left: 20px;
+        }
+        
+        /* Styles pour le menu mobile */
+        @media only screen and (max-width: 600px) {
+            .menu-icon {
+                display: block;
+            }
+            
+            .menu ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: #f9f9f9;
+                padding: 10px;
+            }
+            
+            .menu ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // JavaScript pour afficher/cacher le menu mobile
+        const menuIcon = document.querySelector('.menu-icon');
+        const menuList = document.querySelector('.menu ul');
+
+        menuIcon.addEventListener('click', () => {
+            menuList.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

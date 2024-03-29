@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APELA - Association pour les littératures africaines</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
+
 <body>
     <header>
-        <nav class="navigation">
-            <div class="navigation__logo">
-                <a href="" class="navigation__logo--lien"><img src="assets/img/" alt="logo de l'apela">Logo</a>
-            </div>
-            <div class="navigation__liens">
-                <ul class="navigation__liens--liste">
-                    <li>Accueil</li>
-                    <li>Qui sommes-nous ?</li>
-                    <li>Notre Réseau</li>
-                    <li>Revue</li>
-                    <li>Activités</li>
-                    <li>Contact</li>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__logo">
+                    <a href="" class="nav__logo--lien"><img src="assets/img/logo.png" alt="logo de l'apela"></a>
+                </div>
+                <div class="nav__links">
+                    <ul class="nav__links--list">
+                        <li class="active"><a href="">Accueil</a></li>
+                        <li><a href="">Notre Réseau</a>
+                            <div class="submenu">
+                                <ul>
+                                  <li><a href="#">Lien 1</a></li>
+                                  <li><a href="#">Lien 2</a></li>
+                                  <li><a href="#">Lien 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">Revue</a></li>
+                        <li><a href="">Activités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="user"><a href="" class="btn btn-primary">Connexion <i class="uil uil-user"></i></a>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </nav>
-        
+
         <section class="banner">
             <div class="banner__description">
                 <h1>APELA <br>Association Pour les littératures africaines</h1>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+                <a href="#" class="btn btn-secondary">Réjoindre l'Apela</a>
             </div>
-            <div>
-
+            <div class="banner__image">
+                <img src="assets/img/banner.jpg" alt="Des livres et une plumes" width="500px"> 
             </div>
         </section>
     </header>
     <main>
-
+        <section class="apela">
+            <div>
+                Qui sommes nous 
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
