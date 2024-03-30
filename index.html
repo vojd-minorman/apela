@@ -4,63 +4,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APELA - Association pour les littératures africaines</title>
+    <title>APELA - Association pour l'étude des littératures africaines</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
     <header>
-        <nav class="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <div class="nav__logo">
-                    <a href="" class="nav__logo--lien"><img src="assets/img/logo.png" alt="logo de l'apela"></a>
-                </div>
-                <div class="nav__links">
-                    <ul class="nav__links--list">
-                        <li class="active"><a href="">Accueil</a></li>
-                        <li><a href="">Notre Réseau</a>
-                            <div class="submenu">
-                                <ul>
-                                  <li><a href="#">Lien 1</a></li>
-                                  <li><a href="#">Lien 2</a></li>
-                                  <li><a href="#">Lien 3</a></li>
-                                </ul>
-                            </div>
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="" width="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="icon navbar-toggler-icon">
+                        <i class="bar1 al"></i>
+                        <i class="bar2 al"></i>
+                        <i class="bar3 al"></i>
+                    </span>
+                    <span class="menu">Menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                         </li>
-                        <li><a href="">Revue</a></li>
-                        <li><a href="">Activités</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="user"><a href="" class="btn btn-primary">Connexion <i class="uil uil-user"></i></a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                L'Apela
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Bureau et CA</a></li>
+                                <li><a class="dropdown-item" href="#">Adhésions</a></li>
+                                <li><a class="dropdown-item" href="#">Liste de diffusion</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                La Revue
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">L'équipe de Rédaction</a></li>
+                                <li><a class="dropdown-item" href="#">Liste des numéros</a></li>
+                                <li><a class="dropdown-item" href="#">Commander des numéros</a></li>
+                                <li><a class="dropdown-item" href="#">S'abonner aux ELA</a></li>
+                                <li><a class="dropdown-item" href="#">Publier dans les ELA</a></li>
+                                <li><a class="dropdown-item" href="#">Envoyer un ouvrage</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Les Activités
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Actualités</a></li>
+                                <li><a class="dropdown-item" href="#">Publications</a></li>
+                                <li><a class="dropdown-item" href="#">Rencontres</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contacts</a>
                         </li>
 
                     </ul>
+                    <div class="d-flex">
+                        <a href="" class="bouton bouton-default uil uil-user"> Se connecter</a>
+                    </div>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                        <button class="bouton bouton-primary" type="submit">OK</button>
+                    </form> -->
                 </div>
             </div>
         </nav>
-
         <section class="banner">
-            <div class="banner__description">
-                <h1><span>APELA</span><br>Association Pour les littératures africaines</h1>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
-                <a href="#" class="btn btn-secondary">Réjoindre l'Apela</a>
-            </div>
-            <div class="banner__image">
-                <img src="assets/img/banner.jpg" alt="Des livres et une plumes" width="500px"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="banner__description">
+                            <h1><span>APELA</span><br>Association Pour l'Etude des Littératures Africaines</h1>
+                            <a href="#" class="bouton bouton-primary">En savoir plus</a>
+                            <a href="#" class="bouton bouton-secondary">Réjoindre l'Apela</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="banner__image">
+                            <img src="assets/img/banner.png" alt="Des livres et une plumes" width="500px">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </header>
-    <main>
-        <section class="apela">
-            <div>
-                Qui sommes nous 
+    <main class="container">
+        <section class="apropos">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="apropos__description">
+                        <h1>Qui sommes-nous ?</h1>
+                        <p>L’APELA – l’Association pour l’étude des littératures africaines – se consacre aux œuvres
+                            africaines
+                            dans leur diversité, orales ou écrites, en langue française, anglaise, portugaise, arabe,
+                            ainsi
+                            qu’en langues africaines; dans leur diversité géographique aussi, sur le continent, en
+                            diaspora ou
+                            dans les îles des Caraïbes ou de l’Océan Indien. L’APELA est ainsi un lieu de rencontre des
+                            chercheurs, au-delà des cloisonnements universitaires.</p>
+                        <p>Les activités, les appels à contribution et la vie scientifique des membres de l’APELA sont
+                            consultables sur le Carnet de recherches de l’APELA : <a
+                                href="https://apela.hypotheses.org" class="interno">les Carnets de littératures africaines</a>
+                        </p>
+                        <p>L’APELA dispose également d’une revue, les Etudes Littéraires Africaines (ELA), avec deux
+                            numéros par an, dont la version numérique est disponible sur la plateforme <a
+                                href="https://erudit.org" class="interno">Erudit</a>.</p>
+                        <p><a href="" class="bouton bouton-primary">Devenir Membre</a></p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="apropos__navigation">
+                        <h2>Trouver rapidement</h2>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                            <button class="bouton bouton-primary uil uil-search" type="submit"></button>
+                        </form>
+                        <div class="apropos__navigation--description">
+                            <div class="flex">
+                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
+                                    aria-controls="bureau">
+                                    Bureau et CA 
+                                </a>
+                            </div>
+                            <div class="collapse" id="bureau">
+                                <div class="card card-body">
+                                    Les informations sur nos bureaux et CA.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apropos__navigation--description">
+                            <div class="flex">
+                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
+                                    aria-controls="bureau">
+                                    Liste de diffusion 
+                                </a>
+                            </div>
+                            <div class="collapse" id="bureau">
+                                <div class="card card-body">
+                                    Les informations sur nos bureaux et CA.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apropos__navigation--description">
+                            <div class="flex">
+                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
+                                    aria-controls="bureau">
+                                    Liste des numéros 
+                                </a>
+                            </div>
+                            <div class="collapse" id="bureau">
+                                <div class="card card-body">
+                                    Les informations sur nos bureaux et CA.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apropos__navigation--description">
+                            <div class="flex">
+                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
+                                    aria-controls="bureau">
+                                    Commander des numéros 
+                                </a>
+                            </div>
+                            <div class="collapse" id="bureau">
+                                <div class="card card-body">
+                                    Les informations sur nos bureaux et CA.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apropos__navigation--description">
+                            <div class="flex">
+                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
+                                    aria-controls="bureau">
+                                    S'abonner aux Ela
+                                </a>
+                            </div>
+                            <div class="collapse" id="bureau">
+                                <div class="card card-body">
+                                    Les informations sur nos bureaux et CA.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apropos__navigation--description">
+                            <div class="flex">
+                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
+                                    aria-controls="bureau">
+                                    Publier dans les ELA
+                                </a>
+                            </div>
+                            <div class="collapse" id="bureau">
+                                <div class="card card-body">
+                                    Les informations sur nos bureaux et CA.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
