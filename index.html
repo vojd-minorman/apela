@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/icomoon.css">
-    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
 </head>
 
 <body>
@@ -111,8 +112,8 @@
             </div>
         </section>
     </header>
-    <main class="container">
-        <section class="apropos">
+    <main class="">
+        <section class="apropos container">
             <div class="row">
                 <div class="col-md-8">
                     <div class="apropos__description">
@@ -126,8 +127,8 @@
                             dans les îles des Caraïbes ou de l’Océan Indien. L’APELA est ainsi un lieu de rencontre des
                             chercheurs, au-delà des cloisonnements universitaires.</p>
                         <p>Les activités, les appels à contribution et la vie scientifique des membres de l’APELA sont
-                            consultables sur le Carnet de recherches de l’APELA : <a
-                                href="https://apela.hypotheses.org" class="interno">les Carnets de littératures africaines</a>
+                            consultables sur le Carnet de recherches de l’APELA : <a href="https://apela.hypotheses.org"
+                                class="interno">les Carnets de littératures africaines</a>
                         </p>
                         <p>L’APELA dispose également d’une revue, les Etudes Littéraires Africaines (ELA), avec deux
                             numéros par an, dont la version numérique est disponible sur la plateforme <a
@@ -147,7 +148,7 @@
                             <div class="flex">
                                 <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
                                     aria-controls="bureau">
-                                    Bureau et CA 
+                                    Bureau et CA
                                 </a>
                             </div>
                             <div class="collapse" id="bureau">
@@ -158,12 +159,12 @@
                         </div>
                         <div class="apropos__navigation--description">
                             <div class="flex">
-                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
-                                    aria-controls="bureau">
-                                    Liste de diffusion 
+                                <a class="" data-bs-toggle="collapse" href="#diffusion" role="button"
+                                    aria-expanded="false" aria-controls="diffusion">
+                                    Liste de diffusion
                                 </a>
                             </div>
-                            <div class="collapse" id="bureau">
+                            <div class="collapse" id="diffusion">
                                 <div class="card card-body">
                                     Les informations sur nos bureaux et CA.
                                 </div>
@@ -171,12 +172,12 @@
                         </div>
                         <div class="apropos__navigation--description">
                             <div class="flex">
-                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
-                                    aria-controls="bureau">
-                                    Liste des numéros 
+                                <a class="" data-bs-toggle="collapse" href="#numeros" role="button"
+                                    aria-expanded="false" aria-controls="numeros">
+                                    Liste des numéros
                                 </a>
                             </div>
-                            <div class="collapse" id="bureau">
+                            <div class="collapse" id="numeros">
                                 <div class="card card-body">
                                     Les informations sur nos bureaux et CA.
                                 </div>
@@ -184,12 +185,12 @@
                         </div>
                         <div class="apropos__navigation--description">
                             <div class="flex">
-                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
-                                    aria-controls="bureau">
-                                    Commander des numéros 
+                                <a class="" data-bs-toggle="collapse" href="#commande" role="button"
+                                    aria-expanded="false" aria-controls="commande">
+                                    Commander des numéros
                                 </a>
                             </div>
-                            <div class="collapse" id="bureau">
+                            <div class="collapse" id="commande">
                                 <div class="card card-body">
                                     Les informations sur nos bureaux et CA.
                                 </div>
@@ -197,12 +198,12 @@
                         </div>
                         <div class="apropos__navigation--description">
                             <div class="flex">
-                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
-                                    aria-controls="bureau">
+                                <a class="" data-bs-toggle="collapse" href="#ela" role="button" aria-expanded="false"
+                                    aria-controls="ela">
                                     S'abonner aux Ela
                                 </a>
                             </div>
-                            <div class="collapse" id="bureau">
+                            <div class="collapse" id="ela">
                                 <div class="card card-body">
                                     Les informations sur nos bureaux et CA.
                                 </div>
@@ -210,12 +211,25 @@
                         </div>
                         <div class="apropos__navigation--description">
                             <div class="flex">
-                                <a class="" data-bs-toggle="collapse" href="#bureau" role="button" aria-expanded="false"
-                                    aria-controls="bureau">
+                                <a class="" data-bs-toggle="collapse" href="#publier" role="button"
+                                    aria-expanded="false" aria-controls="ela">
                                     Publier dans les ELA
                                 </a>
                             </div>
-                            <div class="collapse" id="bureau">
+                            <div class="collapse" id="publier">
+                                <div class="card card-body">
+                                    Les informations sur nos bureaux et CA.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apropos__navigation--description">
+                            <div class="flex">
+                                <a class="" data-bs-toggle="collapse" href="#rencontres" role="button"
+                                    aria-expanded="false" aria-controls="Rencontres">
+                                    Rencontres
+                                </a>
+                            </div>
+                            <div class="collapse" id="rencontres">
                                 <div class="card card-body">
                                     Les informations sur nos bureaux et CA.
                                 </div>
@@ -225,14 +239,59 @@
                 </div>
             </div>
         </section>
+        <section class="actus">
+            <div class="container">
+                <h1>La Revue</h1>
+                <div class="owl-carousel owl-theme" id="actus-carousel">
+                    <div class="item">
+                      <div class="imago">
+                        <img src="images/communautes_profils/lele.jpg" alt="albien">
+                      </div>
+                      <div class="corps__titre">
+          
+                        <h2><a href=""></a>Bilele Couture</h2>
+                        <a href="" class="bouton bouton-secondary"><i class="fa fa-eye"></i> En savoir plus</a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="imago">
+                        <img src="images/communautes_profils/lala.jpg" alt="albien">
+                      </div>
+                      <div class="corps__titre">
+          
+                        <h2><a href=""></a>Gem & Luxe</h2>
+                        <a href="" class="btn btn-primary"><i class="fa fa-eye"></i> Publications</a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="imago">
+                        <img src="images/communautes_profils/loli.jpg" alt="albien">
+                      </div>
+                      <div class="corps__titre">
+          
+                        <h2><a href=""></a>Libelule</h2>
+                        <a href="" class="btn btn-primary"><i class="fa fa-eye"></i> Publications</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        
+        <script src="assets/js/script.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/owl-me.js">
+        //Carousel
+
+    </script>
 </body>
 
 </html>

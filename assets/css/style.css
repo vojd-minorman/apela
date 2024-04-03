@@ -218,6 +218,7 @@ a {
 /* Section Apropos */
 .apropos{
     padding: 50px 20px;
+    border-bottom: 2px solid rgb(240, 240, 240);
 }
 .apropos h1{
     font-size: 2rem;
@@ -288,4 +289,18 @@ a {
 .apropos .apropos__navigation .flex a:hover{
   color: var(--marron) !important;
   font-weight: 600;
+}
+.apropos__navigation .card{
+  border-radius: none !important;
+  font-size: 0.9rem !important;
+}
+
+/*Actualités */
+
+.actus{
+  padding: 50px 20px;
+  background-color: beige;
+}
+.actus h1{
+  font-size: 2rem;
 }
