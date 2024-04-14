@@ -252,14 +252,15 @@ a {
     margin-top: 70px;
 }
 .apropos .apropos__navigation h2{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--primary);
     font-family: "open sans", sans-serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-bottom: 2px;
+    font-weight: 500;
 }
 .apropos .apropos__navigation form{
-    border-bottom: #e7e7e7 2px solid;
+    /* border-bottom: #e7e7e7 2px solid; */
     padding-bottom: 15px;
 }
 .form-control{
@@ -274,10 +275,11 @@ a {
 }
 .apropos .apropos__navigation .flex{
     margin: 10px 0;
+    border-bottom: 1px solid rgb(197, 197, 197) !important;
 }
 .apropos .apropos__navigation .flex a , .apropos .apropos__navigation .flex i{
   color: var(--metal-color) !important;
-  font-weight: 600;
+  /* font-weight: 600; */
   transition: all 0.3s ease !important ;
   font-size: 14px !important;
 }
@@ -288,19 +290,60 @@ a {
 
 .apropos .apropos__navigation .flex a:hover{
   color: var(--marron) !important;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .apropos__navigation .card{
   border-radius: none !important;
   font-size: 0.9rem !important;
 }
 
-/*Actualités */
+/*Revue Ela - Accueil */
 
 .actus{
   padding: 50px 20px;
+  /* background-color: beige; */
+}
+.actus h1, .activites h1{
+  font-size: 2rem;
+  /* line-height: 0.9rem; */
+  margin : 0;
+  /* border-bottom : 2px solid rgb(243, 243, 196); */
+}
+.actus span{
+  display: block;
+  color : var(--marron);
+  font-size : 0.9rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.actus .corps__titre span{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--marron);
+  text-transform: none;
+}
+.actus .corps__titre h2{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1rem;
+  margin-bottom: 5px;
+}
+.actus .corps__titre a{
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+}
+.actus .corps__titre a:hover{
+  color: var(--marron);
+}
+
+/*** Activités de l'Apela - Accueil ***/
+
+.activites{
+  padding: 50px 20px;
   background-color: beige;
 }
-.actus h1{
-  font-size: 2rem;
+.activites h1{
+  border-bottom: 1px solid rgba(228, 207, 92, 0.5);
+  margin-bottom: 20px;
 }
